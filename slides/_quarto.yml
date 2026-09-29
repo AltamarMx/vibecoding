@@ -1,0 +1,28 @@
+project:
+  type: default
+  output-dir: _site
+  render:
+    - index.qmd
+
+lang: es
+
+format:
+  revealjs:
+    theme: [default, styles.scss]
+    slide-number: c/t
+    show-slide-number: all
+    hash: true
+    menu: true
+    preview-links: auto
+    code-line-numbers: false
+    code-overflow: wrap
+    highlight-style: github
+    footer: "Vibe coding para cálculos de energía · IER-UNAM · 2026"
+    width: 1280
+    height: 720
+    embed-resources: false
+    transition: none
+    incremental: false
+
+execute:
+  enabled: false
