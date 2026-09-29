@@ -34,7 +34,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-b7dfdbeb59aa91f03223022057406f6f.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-8133c06b939338866d978193da4edd22.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -225,8 +225,30 @@ Marcadores pendientes:
 </section>
 <section id="qué-es-entonces-el-vibe-coding" class="slide level2">
 <h2>¿Qué es, entonces, el vibe coding?</h2>
-<div class="pregunta small">
-<p>Describir en lenguaje natural lo que quieres, aceptar lo que el modelo escribe<br> <strong>sin leerlo</strong>, y corregir por prueba y error hasta que “funciona”.</p>
+<div class="definicion">
+<p>Describir en lenguaje natural lo que quieres, aceptar lo que el modelo escribe <strong>sin leerlo</strong>, y corregir por prueba y error hasta que “funciona”.</p>
+</div>
+<div class="ciclo">
+<div class="paso">
+<p><span class="n">1</span></p>
+<p><strong>Describes</strong></p>
+<p><span class="d">en lenguaje natural lo que quieres</span></p>
+</div>
+<p><span class="flecha">→</span></p>
+<div class="paso clave">
+<p><span class="n">2</span></p>
+<p><strong>Aceptas sin leer</strong></p>
+<p><span class="d">lo que el modelo escribe</span></p>
+</div>
+<p><span class="flecha">→</span></p>
+<div class="paso">
+<p><span class="n">3</span></p>
+<p><strong>Corriges</strong></p>
+<p><span class="d">por prueba y error</span></p>
+</div>
+</div>
+<div class="vuelta">
+<p>↻ y vuelves a empezar… hasta que “funciona”</p>
 </div>
 <aside class="notes">
 <p>Definición operativa. Dejar la frase en pantalla unos segundos antes de pasar a la pregunta gancho.</p>
@@ -244,34 +266,82 @@ Marcadores pendientes:
 </section>
 <section id="qué-anda-haciendo-la-comunidad" class="slide level2">
 <h2>¿Qué anda haciendo la comunidad?</h2>
-<div class="columns small">
-<div class="column" style="width:33%;">
-<h3 id="juguetes-que-explotaron">Juguetes que explotaron</h3>
-<ul>
-<li><a href="https://karpathy.bearblog.dev/vibe-coding-menugen/"><strong>MenuGen</strong></a> (Karpathy): foto del menú → imágenes de los platillos. Su propio ejemplo de “fin de semana”; lo difícil no fue el código sino “armar el mueble de IKEA” de servicios.</li>
-<li><a href="https://levels.io/fly-pieter-com-vibecoded-flight-simulator"><strong>fly.pieter.com</strong></a> (Pieter Levels): simulador de vuelo MMO en el navegador, prototipo en 3 h con Cursor, Claude y Grok. 1 M USD ARR en 17 días; un año después, 70-90 K USD al mes.</li>
-<li><a href="https://blog.ezyang.com/2025/06/vibe-coding-case-study-scubaduck/"><strong>ScubaDuck</strong></a>: un ingeniero de PyTorch se hizo su explorador de datos y documentó el proceso.</li>
-</ul>
-</div><div class="column" style="width:33%;">
-<h3 id="apps-sin-programadores">Apps sin programadores</h3>
-<ul>
-<li><a href="https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"><strong>Lovable</strong></a>: 600 M USD ARR (sep 2026), 100 000 proyectos nuevos al día, 60 % de usuarios no programan. Junto con <a href="https://bolt.new">Bolt</a>, <a href="https://v0.dev">v0</a> y <a href="https://replit.com">Replit</a>.</li>
-<li><a href="https://www.superblocks.com/customers/matthews">Un gerente de marketing inmobiliario</a> que se hizo su generador de <em>offering memorandums</em>: de 3-5 días a minutos.</li>
-<li>Lo cotidiano: contador de carbohidratos, sorteo del <em>standup</em>, landing pages (<a href="https://www.fuzen.io/posts/vibe-coding-examples-2026">ejemplos</a>).</li>
-</ul>
-</div><div class="column" style="width:33%;">
-<h3 id="ciencia">Ciencia</h3>
-<ul>
-<li><a href="https://www.anthropic.com/research/coding-agents-social-sciences">Encuesta de Anthropic</a> a 1 260 científicos sociales (feb-mar 2026): 81 % ha usado chatbots en su investigación, <strong>20 %</strong> ya usa agentes de código.</li>
-<li><a href="https://www.scientificamerican.com/article/how-claude-code-is-bringing-vibe-coding-to-everyone/">Claude Code</a> y Codex como “asistente de laboratorio”: análisis, figuras, limpieza de datos.</li>
-<li>Y en casa: <a href="https://ener-habitat.github.io/proteccion-solar/"><strong>Protección solar</strong></a> (Ener-Habitat, IER-UNAM), <em>webapp</em> en Shiny para Python <strong>sin servidor</strong> (Shinylive/WebAssembly) desarrollada con vibe coding: carta solar estereográfica y diseño de aleros, con pruebas validadas contra pvlib.</li>
-</ul>
-</div></div>
+<div class="comunidad">
+<div class="panel">
+<p><span class="cat">Juguetes que explotaron</span></p>
+<p><span class="big">3 h</span> <span class="bigdesc">de prototipo; 1 M USD ARR en 17 días</span></p>
+<div class="item">
+<p><a href="https://karpathy.bearblog.dev/vibe-coding-menugen/"><strong>MenuGen</strong></a> <span class="d">Foto del menú → imágenes de platillos</span></p>
+</div>
+<div class="item">
+<p><a href="https://levels.io/fly-pieter-com-vibecoded-flight-simulator"><strong>fly.pieter.com</strong></a> <span class="d">Simulador de vuelo en el navegador</span></p>
+</div>
+<div class="item">
+<p><a href="https://blog.ezyang.com/2025/06/vibe-coding-case-study-scubaduck/"><strong>ScubaDuck</strong></a> <span class="d">Explorador de datos de un ingeniero de PyTorch</span></p>
+</div>
+</div>
+<div class="panel">
+<p><span class="cat">Apps sin programadores</span></p>
+<p><span class="big">60 %</span> <span class="bigdesc">de los usuarios de Lovable no programa</span></p>
+<div class="item">
+<p><a href="https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"><strong>Lovable</strong></a> <span class="d">600 M USD ARR; también Bolt, v0, Replit</span></p>
+</div>
+<div class="item">
+<p><a href="https://www.superblocks.com/customers/matthews"><strong>Marketing inmobiliario</strong></a> <span class="d">De 3-5 días a minutos</span></p>
+</div>
+<div class="item">
+<p><strong>Lo cotidiano</strong> <span class="d">Contadores, sorteos, <em>landing pages</em></span></p>
+</div>
+</div>
+<div class="panel casa">
+<p><span class="cat">Ciencia</span></p>
+<p><span class="big">20 %</span> <span class="bigdesc">de científicos sociales ya usa agentes de código</span></p>
+<div class="item">
+<p><a href="https://www.anthropic.com/research/coding-agents-social-sciences"><strong>Encuesta de Anthropic</strong></a> <span class="d">1 260 investigadores, 2026</span></p>
+</div>
+<div class="item">
+<p><a href="https://www.scientificamerican.com/article/how-claude-code-is-bringing-vibe-coding-to-everyone/"><strong>Claude Code y Codex</strong></a> <span class="d">Como “asistente de laboratorio”</span></p>
+</div>
+<div class="item destacado">
+<p><a href="https://ener-habitat.github.io/proteccion-solar/"><strong>Protección solar</strong> · IER-UNAM</a> <span class="d">Hecha en casa, validada contra pvlib</span></p>
+</div>
+</div>
+</div>
 <div class="fuente">
 <p>Cifras de ingresos reportadas por las propias empresas o sus fundadores.</p>
 </div>
 <aside class="notes">
-<p>Tres tipos de uso: juguetes virales, apps de negocio hechas por no programadores y ciencia. El punto de aterrizaje es la tercera columna: en ciencia el uso de agentes es aún minoritario (20 %) y es exactamente donde el criterio de dominio decide si el número sirve. Enlaza con la pregunta gancho.</p>
+<p>Tres tipos de uso: juguetes virales, apps de negocio hechas por no programadores y ciencia.</p>
+<ul>
+<li>MenuGen (Karpathy): su propio ejemplo de “fin de semana”; lo difícil no fue el código sino “armar el mueble de IKEA” de servicios.</li>
+<li>fly.pieter.com (Pieter Levels): MMO en el navegador con Cursor, Claude y Grok; un año después, 70-90 K USD al mes.</li>
+<li>ScubaDuck: el ingeniero documentó todo el proceso.</li>
+<li>Lovable (sep 2026): 100 000 proyectos nuevos al día. Junto con Bolt, v0 y Replit.</li>
+<li>Marketing inmobiliario: un gerente se hizo su generador de <em>offering memorandums</em>.</li>
+<li>Encuesta de Anthropic: 1 260 científicos sociales (feb-mar 2026); 81 % ha usado chatbots en su investigación.</li>
+<li>Asistente de laboratorio: análisis, figuras, limpieza de datos.</li>
+<li>Protección solar (Ener-Habitat): Shiny para Python sin servidor (Shinylive/WebAssembly), hecha con vibe coding: carta solar estereográfica y diseño de aleros.</li>
+</ul>
+<p>El punto de aterrizaje es la tercera columna: en ciencia el uso de agentes es aún minoritario (20 %) y es exactamente donde el criterio de dominio decide si el número sirve. Enlaza con la pregunta gancho.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+<div class="pregunta">
+<p>¿Usaron IA para algo de su trabajo este mes/semana?</p>
+</div>
+<aside class="notes">
+<p>Pregunta rápida para calibrar la sala antes de entrar en materia.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -289,31 +359,8 @@ Marcadores pendientes:
 <h1>Entonces… ¿realizarías el análisis de un artículo científico o de una tesis usando vibe coding?</h1>
 <!-- Bloque 0 · 3 min -->
 </section>
-<section id="section" class="slide level2 center">
-<h2></h2>
-<div class="pregunta">
-<p>¿Usaron IA para algo de su trabajo esta semana?</p>
-</div>
-<aside class="notes">
-<p>Pregunta rápida para calibrar la sala antes de entrar en materia.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="section-1" class="slide level2 center">
 <h2></h2>
-<div class="pregunta">
-<p>Entonces… ¿realizarías el análisis de un artículo científico<br>o de una tesis usando vibe coding?</p>
-</div>
-<p><br></p>
 <div class="pregunta">
 <p><strong>Sí, pero con estas consideraciones:</strong></p>
 </div>
@@ -335,7 +382,7 @@ Marcadores pendientes:
 </div>
 <div class="card">
 <p><span class="num">6</span></p>
-<p><strong>Revisa TODO lo que la IA escribe</strong></p>
+<p><strong>Pide ideas, retroalimenta, pon a prueba</strong></p>
 </div>
 <div class="card">
 <p><span class="num">3</span></p>
@@ -343,7 +390,7 @@ Marcadores pendientes:
 </div>
 <div class="card">
 <p><span class="num">7</span></p>
-<p><strong>Pide ideas, retroalimenta, pon a prueba</strong></p>
+<p><strong>Revisa TODO lo que la IA escribe</strong></p>
 </div>
 <div class="card">
 <p><span class="num">4</span></p>
@@ -368,13 +415,13 @@ Marcadores pendientes:
           display:block!important;
       }</style></aside>
 </section>
-<section id="ejemplo-aplicado-el-clima-de-torreón" class="slide level2">
-<h2>Ejemplo aplicado: el clima de Torreón</h2>
+<section id="ejemplo-aplicado-el-clima-de-monclova" class="slide level2">
+<h2>Ejemplo aplicado: el clima de Monclova</h2>
 <div class="cards dos">
 <div class="card">
 <p><span class="num">1</span></p>
 <p><strong>Explorar un EPW</strong></p>
-<p><span class="desc">TMYx de Torreón (climate.onebuilding.org): metadatos, 8760 horas, calidad y meses de origen.</span></p>
+<p><span class="desc">TMYx de Monclova (climate.onebuilding.org): metadatos, 8760 horas, calidad y meses de origen.</span></p>
 </div>
 <div class="card">
 <p><span class="num">2</span></p>
@@ -393,7 +440,7 @@ Marcadores pendientes:
 </div>
 </div>
 <aside class="notes">
-<p>Este es el caso que recorren los ocho clips. Todo sale de un solo archivo EPW y de pvlib + pandas. Torreón (Coahuila, ~1 120 m, UTC−6): clima semiárido con veranos calurosos, inviernos frescos y gran oscilación diaria. Sirve para ver calor y frío en el mismo año con el modelo adaptativo.</p>
+<p>Este es el caso que recorren los ocho clips. Todo sale de un solo archivo EPW y de pvlib + pandas. Monclova (Coahuila, ~600 m, UTC−6): clima semiárido cálido con veranos muy calurosos (con frecuencia sobre 40 °C) e inviernos templados con heladas ocasionales. Sirve para ver calor y frío en el mismo año con el modelo adaptativo.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -408,130 +455,232 @@ Marcadores pendientes:
 </section>
 <section id="maneja-el-entorno-de-programas" class="slide level2">
 <h2>1. Maneja el entorno de programas</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · uv para el caso Torreón (≤ 3 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<!-- data-autoplay: reveal.js reproduce el video al entrar a la diapositiva y lo pausa al salir.
+     mute=1: sin sonido (y así el navegador siempre permite el autoplay).
+     loop=1&playlist=ID: repetición continua. La velocidad 2x la pone video-2x.html.
+     Debe ser youtube.com/embed (no youtube-nocookie) para que reveal.js lo controle. -->
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/5N2FU5ANkLg?rel=0&amp;mute=1&amp;loop=1&amp;playlist=5N2FU5ANkLg" data-autoplay="" title="uv para el caso Monclova" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
+</div>
+<aside class="notes">
+<p>Video: uv para el caso Monclova (≤ 3 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
 <ul>
-<li><code>uv init --package clima-torreon</code>, <code>uv python pin 3.12</code>, <code>uv add pvlib pandas matplotlib plotly windrose</code>.</li>
+<li><code>uv init --package clima-monclova</code>, <code>uv python pin 3.12</code>, <code>uv add pvlib pandas matplotlib plotly windrose</code>.</li>
 <li>La IA propone <code>pip install pythermalcomfort</code> sin verificar. El humano revisa en PyPI qué es, quién lo mantiene y si calcula el modelo adaptativo que necesitamos, antes de <code>uv add</code>.</li>
 <li><code>uv run python -c "import pvlib; print(pvlib.__version__)"</code> → 0.16.1, fijado en <code>uv.lock</code>.</li>
 <li>Cierre: <code>uv sync --locked</code> en una carpeta limpia reproduce el entorno exacto.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c1-uv.mp4</code></p>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="controla-el-espacio-de-trabajo-y-la-estructura" class="slide level2">
 <h2>2. Controla el espacio de trabajo y la estructura</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · espacio de trabajo (≤ 3 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/6yYv5YRffFQ?rel=0&amp;mute=1&amp;loop=1&amp;playlist=6yYv5YRffFQ" data-autoplay="" title="Espacio de trabajo" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
+</div>
+<aside class="notes">
+<p>Video: espacio de trabajo (≤ 3 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
 <ul>
 <li>Carpetas: <code>data/001_raw/</code> (EPW inmutable), <code>data/002_interim/</code>, <code>src/clima/</code>, <code>analysis/</code>, <code>tests/</code>, <code>docs/</code>.</li>
-<li>Descargar el TMYx de Torreón, copiarlo a <code>data/001_raw/</code>, calcular <code>sha256</code> y escribir <code>FUENTES.md</code> (URL, fecha, variante 2007-2021).</li>
+<li>Descargar el TMYx de Monclova, copiarlo a <code>data/001_raw/</code>, calcular <code>sha256</code> y escribir <code>FUENTES.md</code> (URL, fecha, variante 2007-2021).</li>
 <li><code>git init</code>, <code>.gitignore</code> y primer commit antes de escribir código.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c2-espacio.mp4</code></p>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="haz-un-plan-inicial-de-lo-que-quieres-hacer-con-los-datos" class="slide level2">
 <h2>3. Haz un plan inicial de lo que quieres hacer con los datos</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · plan en Markdown (≤ 3 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/eApjqVNIgB4?rel=0&amp;mute=1&amp;loop=1&amp;playlist=eApjqVNIgB4" data-autoplay="" title="Plan en Markdown" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
+</div>
+<aside class="notes">
+<p>Video: plan en Markdown (≤ 3 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
 <ul>
-<li>Prompt: “Escribe <code>PLAN.md</code> para caracterizar el clima de Torreón desde el EPW, cuantificar el calor con confort adaptativo y calcular el potencial solar mensual horizontal. No escribas código.”</li>
+<li>Prompt: “Escribe <code>PLAN.md</code> para caracterizar el clima de Monclova desde el EPW, cuantificar el calor con confort adaptativo y calcular el potencial solar mensual horizontal. No escribas código.”</li>
 <li>La IA propone supuestos erróneos: media predominante con la temperatura <strong>horaria</strong>, GHI en W/m², rosa de vientos con la dirección hacia donde <strong>va</strong> el viento.</li>
 <li>El humano corrige el plan: media diaria móvil de 7 días previos, Wh/m² → kWh/m², dirección de <strong>procedencia</strong>, y qué hacer si <span class="math inline">\(\bar{T}_{pma}\)</span> sale de 10-33.5 °C.</li>
 <li>Commit del plan: es el contrato con el agente.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c3-plan.mp4</code></p>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="define-herramientas-y-reglas-del-espacio-de-trabajo" class="slide level2">
 <h2>4. Define herramientas y reglas del espacio de trabajo</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · reglas para el agente (≤ 3 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/_Dk2cmxMKKs?rel=0&amp;mute=1&amp;loop=1&amp;playlist=_Dk2cmxMKKs" data-autoplay="" title="Reglas para el agente" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
+</div>
+<aside class="notes">
+<p>Video: reglas para el agente (≤ 3 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
 <ul>
 <li><code>AGENTS.md</code>: solo <code>uv</code>; no modificar <code>data/001_raw/</code>; unidades en los nombres (<code>ghi_wh_m2</code>, <code>gh_calor_c_h</code>); modelo ASHRAE 55 adaptativo con su intervalo de validez; toda función en <code>src/</code> lleva prueba.</li>
 <li><code>CLAUDE.md</code> con una línea: “Lee y sigue <code>AGENTS.md</code>”.</li>
 <li>Prueba en vivo: “limpia el EPW y guárdalo”. El agente se niega a sobrescribir <code>data/001_raw/</code> y escribe en <code>data/002_interim/</code>.</li>
 <li>Contraste: el mismo prompt sin <code>AGENTS.md</code> sobrescribe el EPW original.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c4-reglas.mp4</code></p>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="ejecuta-el-plan-parte-por-parte" class="slide level2">
 <h2>5. Ejecuta el plan parte por parte</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · Quarto y Python, paso a paso (≤ 4 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/RYGyi0F3SSE?rel=0&amp;mute=1&amp;loop=1&amp;playlist=RYGyi0F3SSE" data-autoplay="" title="Quarto y Python, paso a paso" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
+</div>
+<aside class="notes">
+<p>Video: Quarto y Python, paso a paso (≤ 4 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
 <ul>
 <li><code>analysis/01_clima.qmd</code>, una sección del plan por vez, <code>uv run quarto render</code> tras cada paso.</li>
 <li>Exploración: <code>read_epw</code> (la IA inventa <code>map_variables=True</code> → <code>TypeError</code>), metadatos y meses de origen del TMY.</li>
 <li>Caracterización: temperatura mensual y percentiles, heatmap de GHI, rosa de vientos y porcentaje de calmas.</li>
 <li>Calor y sol: grados-hora sobre el límite adaptativo por mes; barras de GHI mensual en kWh/m²·mes.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c5-quarto.mp4</code></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="pide-ideas-retroalimenta-pon-a-prueba" class="slide level2">
+<h2>6. Pide ideas, retroalimenta, pon a prueba</h2>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/4Sbmc9G9okU?rel=0&amp;mute=1&amp;loop=1&amp;playlist=4Sbmc9G9okU" data-autoplay="" title="Validación del caso" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen=""></iframe>
 </div>
-</div>
+<aside class="notes">
+<p>Video: validación del caso (≤ 4 min). Arranca solo, sin sonido, a 2x y en bucle al llegar a esta diapositiva.</p>
+<ul>
+<li>“Propón pruebas.” La IA escribe una tautológica. El humano pide pruebas físicas: 8760 filas, GHI ≥ 0 y cero de noche, velocidad del viento ≥ 0, <span class="math inline">\(T_{conf}\)</span> solo con <span class="math inline">\(10 \le \bar{T}_{pma} \le 33.5\)</span> °C.</li>
+<li><code>uv run pytest -q</code>: una prueba <strong>falla</strong> porque los primeros días de enero no tienen días previos para la media predominante. Como el TMY es cíclico, se usan los últimos días de diciembre, y se documenta la decisión.</li>
+<li>Pedir ideas: “¿qué otra métrica de calor usarías?”. La IA sugiere horas sobre 35 °C; el humano la acepta como complemento, no como sustituto.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="revisa-todo-lo-que-la-ia-escribe" class="slide level2">
-<h2>6. Revisa TODO lo que la IA escribe</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · revisión del código (≤ 3 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<h2>7. Revisa TODO lo que la IA escribe</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/revisa.png" class="quarto-figure quarto-figure-center" height="540"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>Revisión del código (sin video): recorrer esta celda línea por línea en voz alta.</p>
 <ul>
 <li><code>git diff</code> línea por línea, en voz alta.</li>
 <li>Tres errores que no lanzaron excepción: la media predominante calculada con la temperatura horaria; el límite superior sumado en °C·día en vez de °C·h; la GHI mensual dividida entre el número de horas en vez de sumada.</li>
 <li>Pedir a la IA que explique una línea sospechosa y contrastar con ASHRAE 55 y la documentación de pvlib.</li>
 <li>Commit con qué se aceptó y qué se corrigió; entrada en <code>docs/bitacora-ia.md</code>.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c6-revision.mp4</code></p>
-</div>
-</div>
-</section>
-<section id="pide-ideas-retroalimenta-pon-a-prueba" class="slide level2">
-<h2>7. Pide ideas, retroalimenta, pon a prueba</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · validación del caso (≤ 4 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
-<ul>
-<li>“Propón pruebas.” La IA escribe una tautológica. El humano pide pruebas físicas: 8760 filas, GHI ≥ 0 y cero de noche, velocidad del viento ≥ 0, <span class="math inline">\(T_{conf}\)</span> solo con <span class="math inline">\(10 \le \bar{T}_{pma} \le 33.5\)</span> °C.</li>
-<li><code>uv run pytest -q</code>: una prueba <strong>falla</strong> porque los primeros días de enero no tienen días previos para la media predominante. Como el TMY es cíclico, se usan los últimos días de diciembre, y se documenta la decisión.</li>
-<li>Pedir ideas: “¿qué otra métrica de calor usarías?”. La IA sugiere horas sobre 35 °C; el humano la acepta como complemento, no como sustituto.</li>
-</ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c7-validacion.mp4</code></p>
-</div>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="tuviste-tu-primer-prototipo-ahora-recrea-y-revisa" class="slide level2">
 <h2>8. Tuviste tu primer prototipo: ahora recrea y revisa</h2>
-<div class="video-placeholder">
-<p><span class="video-title">VIDEO · human in the loop (≤ 4 min)</span></p>
-<p><strong>Debe demostrar:</strong></p>
+<!-- Diagrama generado (SVG en línea): ciclo de revisión y reescritura. -->
+<svg class="loop8" viewbox="0 0 1100 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ciclo de revisión y reescritura: recrea, revisa, reescribe, compara, anota y firma; el humano está en el centro del ciclo">
+<defs><marker id="flecha8" viewbox="0 0 10 10" refx="8" refy="5" markerwidth="7" markerheight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b3541e"></path></marker></defs>
+<path d="M682.5,93.0 L687.4,93.9 L692.2,94.7 L697.1,95.7 L701.9,96.6 L706.7,97.6 L711.4,98.6 L716.2,99.6 L720.9,100.7 L725.5,101.8 L730.2,102.9 L734.8,104.1 L739.4,105.3 L743.9,106.5 L748.4,107.7 L752.9,109.0 L757.4,110.3 L761.8,111.6 L766.1,113.0 L770.5,114.3 L774.8,115.8 L779.0,117.2 L783.2,118.7 L787.4,120.2 L791.6,121.7 L795.6,123.2 L799.7,124.8 L803.7,126.4 L807.7,128.0 L811.6,129.6 L815.5,131.3 L819.3,133.0 L823.1,134.7 L826.8,136.5 L830.5,138.2 L834.1,140.0 L837.7,141.8 L841.3,143.7 L844.7,145.5 L848.2,147.4 L851.6,149.3" fill="none" stroke="#b3541e" stroke-width="4" marker-end="url(#flecha8)"></path>
+<path d="M944.8,277.3 L944.7,279.5 L944.5,281.7 L944.2,283.9 L943.9,286.1 L943.6,288.3 L943.1,290.4 L942.7,292.6 L942.1,294.8 L941.6,297.0 L940.9,299.2 L940.3,301.3 L939.5,303.5 L938.7,305.7 L937.9,307.8 L937.0,310.0 L936.1,312.1 L935.1,314.3 L934.0,316.4 L933.0,318.6 L931.8,320.7 L930.6,322.8 L929.4,324.9 L928.1,327.0 L926.7,329.1 L925.3,331.2 L923.9,333.3 L922.4,335.4 L920.8,337.5 L919.2,339.5 L917.6,341.6 L915.9,343.6 L914.1,345.6 L912.3,347.7 L910.5,349.7 L908.6,351.7 L906.7,353.7 L904.7,355.6 L902.6,357.6 L900.6,359.6 L898.4,361.5" fill="none" stroke="#b3541e" stroke-width="4" marker-end="url(#flecha8)"></path>
+<path d="M650.1,455.8 L645.2,456.4 L640.3,457.0 L635.4,457.5 L630.4,458.0 L625.5,458.5 L620.5,458.9 L615.5,459.4 L610.5,459.8 L605.5,460.1 L600.5,460.4 L595.5,460.7 L590.4,461.0 L585.4,461.2 L580.3,461.4 L575.3,461.6 L570.2,461.8 L565.2,461.9 L560.1,461.9 L555.1,462.0 L550.0,462.0 L544.9,462.0 L539.9,461.9 L534.8,461.9 L529.8,461.8 L524.7,461.6 L519.7,461.4 L514.6,461.2 L509.6,461.0 L504.5,460.7 L499.5,460.4 L494.5,460.1 L489.5,459.8 L484.5,459.4 L479.5,458.9 L474.5,458.5 L469.6,458.0 L464.6,457.5 L459.7,457.0 L454.8,456.4 L449.9,455.8" fill="none" stroke="#b3541e" stroke-width="4" marker-end="url(#flecha8)"></path>
+<path d="M201.6,361.5 L199.4,359.6 L197.4,357.6 L195.3,355.6 L193.3,353.7 L191.4,351.7 L189.5,349.7 L187.7,347.7 L185.9,345.6 L184.1,343.6 L182.4,341.6 L180.8,339.5 L179.2,337.5 L177.6,335.4 L176.1,333.3 L174.7,331.2 L173.3,329.1 L171.9,327.0 L170.6,324.9 L169.4,322.8 L168.2,320.7 L167.0,318.6 L166.0,316.4 L164.9,314.3 L163.9,312.1 L163.0,310.0 L162.1,307.8 L161.3,305.7 L160.5,303.5 L159.7,301.3 L159.1,299.2 L158.4,297.0 L157.9,294.8 L157.3,292.6 L156.9,290.4 L156.4,288.3 L156.1,286.1 L155.8,283.9 L155.5,281.7 L155.3,279.5 L155.2,277.3" fill="none" stroke="#b3541e" stroke-width="4" marker-end="url(#flecha8)"></path>
+<path d="M248.4,149.3 L251.8,147.4 L255.3,145.5 L258.7,143.7 L262.3,141.8 L265.9,140.0 L269.5,138.2 L273.2,136.5 L276.9,134.7 L280.7,133.0 L284.5,131.3 L288.4,129.6 L292.3,128.0 L296.3,126.4 L300.3,124.8 L304.4,123.2 L308.4,121.7 L312.6,120.2 L316.8,118.7 L321.0,117.2 L325.2,115.8 L329.5,114.3 L333.9,113.0 L338.2,111.6 L342.6,110.3 L347.1,109.0 L351.6,107.7 L356.1,106.5 L360.6,105.3 L365.2,104.1 L369.8,102.9 L374.5,101.8 L379.1,100.7 L383.8,99.6 L388.6,98.6 L393.3,97.6 L398.1,96.6 L402.9,95.7 L407.8,94.7 L412.6,93.9 L417.5,93.0" fill="none" stroke="#b3541e" stroke-width="4" marker-end="url(#flecha8)"></path>
+<circle cx="550" cy="272" r="112" fill="#fff3ea" stroke="#b3541e" stroke-width="3"></circle>
+<text x="550" y="250" text-anchor="middle" font-size="30" font-weight="700" fill="#b3541e">Humano</text>
+<text x="550" y="284" text-anchor="middle" font-size="30" font-weight="700" fill="#b3541e">en el ciclo</text>
+<text x="550" y="320" text-anchor="middle" font-size="18" fill="#555">¿algo no cuadra?</text>
+<text x="550" y="344" text-anchor="middle" font-size="18" fill="#555">otra vuelta</text>
+<rect x="432.0" y="32.0" width="236" height="100" rx="12" fill="#f5f7fa" stroke="#1f3a5f" stroke-width="2"></rect>
+<rect x="432.0" y="32.0" width="236" height="6" rx="3" fill="#1f3a5f"></rect>
+<text x="550.0" y="70.0" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3a5f">1. Recrea</text>
+<text x="550.0" y="96.0" text-anchor="middle" font-size="17" fill="#444">carpeta limpia:</text>
+<text x="550.0" y="117.0" text-anchor="middle" font-size="17" fill="#444">uv sync --locked + render</text>
+<rect x="807.7" y="163.3" width="236" height="100" rx="12" fill="#f5f7fa" stroke="#1f3a5f" stroke-width="2"></rect>
+<rect x="807.7" y="163.3" width="236" height="6" rx="3" fill="#1f3a5f"></rect>
+<text x="925.7" y="201.3" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3a5f">2. Revisa</text>
+<text x="925.7" y="227.3" text-anchor="middle" font-size="17" fill="#444">explica en voz alta</text>
+<text x="925.7" y="248.3" text-anchor="middle" font-size="17" fill="#444">T̄pma y grados-hora</text>
+<rect x="664.2" y="375.7" width="236" height="100" rx="12" fill="#f5f7fa" stroke="#1f3a5f" stroke-width="2"></rect>
+<rect x="664.2" y="375.7" width="236" height="6" rx="3" fill="#1f3a5f"></rect>
+<text x="782.2" y="413.7" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3a5f">3. Reescribe</text>
+<text x="782.2" y="439.7" text-anchor="middle" font-size="17" fill="#444">una función a mano,</text>
+<text x="782.2" y="460.7" text-anchor="middle" font-size="17" fill="#444">sin IA</text>
+<rect x="199.8" y="375.7" width="236" height="100" rx="12" fill="#f5f7fa" stroke="#1f3a5f" stroke-width="2"></rect>
+<rect x="199.8" y="375.7" width="236" height="6" rx="3" fill="#1f3a5f"></rect>
+<text x="317.8" y="413.7" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3a5f">4. Compara</text>
+<text x="317.8" y="439.7" text-anchor="middle" font-size="17" fill="#444">¿da lo mismo? GHI vs</text>
+<text x="317.8" y="460.7" text-anchor="middle" font-size="17" fill="#444">PVGIS / NASA POWER</text>
+<rect x="56.3" y="163.3" width="236" height="100" rx="12" fill="#f5f7fa" stroke="#1f3a5f" stroke-width="2"></rect>
+<rect x="56.3" y="163.3" width="236" height="6" rx="3" fill="#1f3a5f"></rect>
+<text x="174.3" y="201.3" text-anchor="middle" font-size="27" font-weight="700" fill="#1f3a5f">5. Anota y firma</text>
+<text x="174.3" y="227.3" text-anchor="middle" font-size="17" fill="#444">bitácora: qué se recreó,</text>
+<text x="174.3" y="248.3" text-anchor="middle" font-size="17" fill="#444">entendió y cambió</text>
+</svg>
+<aside class="notes">
+<p>Recorrer el ciclo en orden; si algo no cuadra en cualquier paso, se da otra vuelta.</p>
 <ul>
 <li><strong>Recrear desde cero:</strong> clonar en una carpeta limpia y correr <code>uv sync --locked &amp;&amp; uv run quarto render</code>. El reporte sale idéntico o el prototipo no está terminado.</li>
-<li><strong>Recorrer el código:</strong> explicar en voz alta el cálculo de <span class="math inline">\(\bar{T}_{pma}\)</span> y de los grados-hora; reescribir uno a mano y comprobar que da lo mismo.</li>
-<li><strong>Referencia externa:</strong> GHI mensual del EPW contra PVGIS-ERA5 o NASA POWER para Torreón, con la fuente citada.</li>
+<li><strong>Revisar y reescribir:</strong> explicar en voz alta el cálculo de <span class="math inline">\(\bar{T}_{pma}\)</span> y de los grados-hora; reescribir uno a mano y comprobar que da lo mismo.</li>
+<li><strong>Comparar con referencia externa:</strong> GHI mensual del EPW contra PVGIS-ERA5 o NASA POWER para Monclova, con la fuente citada.</li>
 <li><strong>Cerrar el ciclo:</strong> anotar en la bitácora qué se recreó, qué se entendió y qué se cambió. El humano firma; la IA no.</li>
 </ul>
-<div class="meta">
-<p>YouTube: <code>{{&lt; video https://www.youtube-nocookie.com/embed/ID &gt;}}</code> · Local: <code>videos/c8-recrea.mp4</code></p>
-</div>
-</div>
-<aside class="notes">
 <p>Las pruebas físicas detectan lo imposible; la referencia externa detecta lo plausible pero incorrecto.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -564,13 +713,13 @@ Marcadores pendientes:
 </div>
 <div class="card">
 <p><span class="num">B</span></p>
-<p><strong>Un plan que tú revisaste</strong></p>
+<p><strong>Un plan que tú creaste</strong></p>
 <p><span class="desc">Pasos 3 y 5: el plan es el contrato; se ejecuta por partes.</span></p>
 </div>
 <div class="card">
 <p><span class="num">C</span></p>
-<p><strong>Una persona que revisó, probó y recreó</strong></p>
-<p><span class="desc">Pasos 6, 7 y 8: diff, pruebas físicas, reproducción desde cero.</span></p>
+<p><strong>Una persona que probó, revisó y recreó</strong></p>
+<p><span class="desc">Pasos 6, 7 y 8: pruebas físicas, diff, reproducción desde cero.</span></p>
 </div>
 </div>
 <aside class="notes">
@@ -587,26 +736,6 @@ Marcadores pendientes:
           display:block!important;
       }</style></aside>
 </section>
-<section id="para-seguir" class="slide level2">
-<h2>Para seguir</h2>
-<div class="columns small">
-<div class="column" style="width:50%;">
-<p><strong>Repositorio del ejemplo de Torreón</strong><br>
-QR: <code>github.com/TODO/clima-torreon</code></p>
-<p><strong>Los ocho videos</strong><br>
-QR: lista de reproducción de YouTube (TODO)</p>
-<p><strong>Estas diapositivas</strong><br>
-QR: GitHub Pages (TODO)</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Lecturas</strong></p>
-<ul>
-<li>Shen y Tamkin 2026, “How AI Impacts Skill Formation”, arXiv:2601.20245</li>
-<li>Vangala et al.&nbsp;2026, “AI-Generated Code Is Not Reproducible (Yet)”, arXiv:2512.22387</li>
-<li>Bridgeford, Poldrack et al.&nbsp;2025, “Ten Simple Rules for AI-Assisted Coding in Science”</li>
-<li>Documentación de <a href="https://pvlib-python.readthedocs.io">pvlib</a>, <a href="https://docs.astral.sh/uv/">uv</a> y <a href="https://quarto.org">Quarto</a></li>
-</ul>
-</div></div>
-</section>
 <section id="section-2" class="slide level2 center">
 <h2></h2>
 <div class="pregunta">
@@ -618,6 +747,67 @@ QR: GitHub Pages (TODO)</p>
 </div>
 <aside class="notes">
 <p>Dejar la pregunta en pantalla durante las preguntas del público.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="herramientas-usadas" class="slide level2">
+<h2>Herramientas usadas</h2>
+<div class="herramientas">
+<div class="grupo">
+<p><span class="cat">Lenguaje y entorno</span></p>
+<div class="h">
+<p><a href="https://www.python.org"><strong>Python</strong></a> <span class="d">El lenguaje de todo el análisis</span></p>
+</div>
+<div class="h">
+<p><a href="https://docs.astral.sh/uv/"><strong>uv</strong></a> <span class="d">Python, dependencias y <code>uv.lock</code></span></p>
+</div>
+</div>
+<div class="grupo">
+<p><span class="cat">Datos y cálculo</span></p>
+<div class="h">
+<p><a href="https://climate.onebuilding.org"><strong>Climate.OneBuilding.Org</strong></a> <span class="d">Archivos climáticos TMYx</span></p>
+</div>
+<div class="h">
+<p><a href="https://energyplus.net/weather"><strong>EPW</strong></a> <span class="d">Formato de clima de EnergyPlus</span></p>
+</div>
+<div class="h">
+<p><a href="https://pvlib-python.readthedocs.io"><strong>pvlib</strong></a> <span class="d">Lectura del EPW y cálculo solar</span></p>
+</div>
+</div>
+<div class="grupo">
+<p><span class="cat">Reporte y publicación</span></p>
+<div class="h">
+<p><a href="https://quarto.org"><strong>Quarto</strong></a> <span class="d">Reporte y estas diapositivas</span></p>
+</div>
+<div class="h">
+<p><a href="https://git-scm.com"><strong>git</strong></a> <span class="d">Historial de cada cambio</span></p>
+</div>
+<div class="h">
+<p><a href="https://pages.github.com"><strong>GitHub Pages</strong></a> <span class="d">Publicación en la web</span></p>
+</div>
+</div>
+<div class="grupo ia">
+<p><span class="cat">Agente de IA</span></p>
+<div class="h">
+<p><a href="https://claude.com/claude-code"><strong>Claude Code</strong></a> <span class="d">con Claude Opus 5.5</span></p>
+</div>
+<p><span class="alt">o, en local y abierto:</span></p>
+<div class="h">
+<p><a href="https://opencode.ai"><strong>OpenCode</strong></a> + <a href="https://ollama.com"><strong>Ollama</strong></a> <span class="d">con Qwen3.8 27B</span></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>El agente es intercambiable: el mismo flujo funciona con un modelo local (OpenCode + Ollama + Qwen3.8 27B), sin mandar datos fuera. Lo que no cambia es el entorno, el plan, las reglas y la revisión humana.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -845,6 +1035,35 @@ QR: GitHub Pages (TODO)</p>
           RevealZoom
         ]
       });
+    </script>
+    <script>
+    // Videos de YouTube a 2x: la URL no admite velocidad, así que se pide por la API
+    // del reproductor (reveal.js ya añade enablejsapi=1). Se reenvía cada 2 s mientras
+    // la diapositiva está visible, porque YouTube vuelve a 1x al cargar y en cada bucle.
+    (function () {
+      var RATE = 2, timer = null;
+      function setRate(slide) {
+        if (!slide) return;
+        slide.querySelectorAll('iframe[src*="youtube.com/embed/"]').forEach(function (f) {
+          if (f.contentWindow) {
+            f.contentWindow.postMessage(JSON.stringify({event: 'command', func: 'setPlaybackRate', args: [RATE]}), '*');
+          }
+        });
+      }
+      function start(slide) {
+        clearInterval(timer);
+        timer = null;
+        if (!slide || !slide.querySelector('iframe[src*="youtube.com/embed/"]')) return;
+        setRate(slide);
+        timer = setInterval(function () { setRate(slide); }, 2000);
+      }
+      function hook() {
+        Reveal.on('ready', function (e) { start(e.currentSlide); });
+        Reveal.on('slidechanged', function (e) { start(e.currentSlide); });
+        if (Reveal.isReady && Reveal.isReady()) start(Reveal.getCurrentSlide());
+      }
+      if (window.Reveal) hook(); else window.addEventListener('load', hook);
+    })();
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
